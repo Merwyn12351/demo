@@ -3,7 +3,7 @@ OBJECT Table 33065468 Board Marks
   OBJECT-PROPERTIES
   {
     Date=09/14/18;
-    Time=[ 6:35:01 PM];
+    Time=[ 6:57:41 PM];
     Modified=Yes;
     Version List=CDX1.0;
   }
@@ -23,12 +23,12 @@ OBJECT Table 33065468 Board Marks
                                                                 GradeRec.SETFILTER("Max Percentage",'>=%1',"Marks Obtained");
                                                                 GradeRec.SETFILTER("Min Percentage",'<=%1',"Marks Obtained");
                                                                 IF GradeRec.FINDFIRST THEN BEGIN
-                                                                  Grade := GradeRec.Code;
+                                                                  "Grade Obtained" := GradeRec.Code;
                                                                 END;
                                                               END;
                                                                }
     { 7   ;   ;Subject             ;Code20        ;TableRelation=Subject }
-    { 8   ;   ;Grade               ;Code10         }
+    { 8   ;   ;Grade Obtained      ;Code10         }
     { 9   ;   ;Attendance          ;Option        ;OptionCaptionML=ENU=Present,Absent;
                                                    OptionString=Present,Absent }
     { 10  ;   ;Print Preference Order;Integer      }
