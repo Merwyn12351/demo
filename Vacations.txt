@@ -1,0 +1,45 @@
+OBJECT Table 50000 Vacations
+{
+  OBJECT-PROPERTIES
+  {
+    Date=14/09/18;
+    Time=[ 5:38:43 PM];
+    Modified=Yes;
+    Version List=B2B1.0(HR&Payroll);
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;Vacation Code       ;Code20         }
+    { 2   ;   ;Employee Type       ;Option        ;OptionCaptionML=ENU=" ,Teaching,Non-Teaching,Sub Staff";
+                                                   OptionString=[ ,Teaching,Non-Teaching,Sub Staff] }
+    { 3   ;   ;Employee Category   ;Code20        ;TableRelation="Employee Categories" }
+    { 4   ;   ;From Date           ;Date           }
+    { 5   ;   ;To Date             ;Date           }
+    { 6   ;   ;Updated             ;Boolean       ;Editable=No }
+    { 7   ;   ;Vacation Type       ;Option        ;OptionString=[ ,Summer,Winter] }
+    { 8   ;   ;Vacation Place      ;Text20         }
+  }
+  KEYS
+  {
+    {    ;Vacation Code,Employee Type,Employee Category;
+                                                   Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    {
+      No   Date        Sign       Trigger          Description
+      --------------------------------------------------------------------------------------------------------------------
+      01   21/09/15 Srikar(b2b1.0) Vacation Table  To be used in Payroll for the Employees who come under Vacational Staff
+    }
+    END.
+  }
+}
+
