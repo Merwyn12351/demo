@@ -1,0 +1,48 @@
+OBJECT Table 33065467 Board Subjects
+{
+  OBJECT-PROPERTIES
+  {
+    Date=09/14/18;
+    Time=[ 6:23:08 PM];
+    Modified=Yes;
+    Version List=CDX1.0;
+  }
+  PROPERTIES
+  {
+    LookupPageID=Page33065471;
+    DrillDownPageID=Page33065471;
+  }
+  FIELDS
+  {
+    { 1   ;   ;Class               ;Code10        ;TableRelation=Class }
+    { 2   ;   ;Academic Year       ;Code10        ;TableRelation=Table33010004 }
+    { 3   ;   ;Subject             ;Code20        ;TableRelation=Subject }
+    { 4   ;   ;Group Subject       ;Boolean        }
+    { 5   ;   ;Compulsory Pass     ;Boolean        }
+    { 6   ;   ;Pass Mark           ;Decimal        }
+    { 7   ;   ;Marks               ;Decimal        }
+    { 8   ;   ;Print Preference Order;Integer      }
+    { 9   ;   ;Failed              ;Boolean        }
+    { 10  ;   ;Subject Description ;Text50         }
+    { 11  ;   ;Mark aggregation    ;Option        ;OptionCaptionML=ENU=GPA, CGPA, Percentage;
+                                                   OptionString=GPA, CGPA, Percentage }
+  }
+  KEYS
+  {
+    {    ;Class,Academic Year,Subject             ;Clustered=Yes }
+    {    ;Marks                                    }
+    {    ;Print Preference Order                   }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      SubjectRec@1000000000 : Record 33065530;
+
+    BEGIN
+    END.
+  }
+}
+
