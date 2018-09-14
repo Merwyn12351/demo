@@ -3,7 +3,7 @@ OBJECT Table 33065468 Board Marks
   OBJECT-PROPERTIES
   {
     Date=09/14/18;
-    Time=[ 6:38:54 PM];
+    Time=[ 6:35:01 PM];
     Modified=Yes;
     Version List=CDX1.0;
   }
@@ -15,7 +15,7 @@ OBJECT Table 33065468 Board Marks
     { 1   ;   ;Class               ;Code10         }
     { 2   ;   ;Academic Year       ;Code10         }
     { 3   ;   ;Student Number      ;Code10        ;TableRelation=Student }
-    { 4   ;   ;Hall Ticket Number  ;Code20         }
+    { 4   ;   ;Hall Ticket No.     ;Code20         }
     { 5   ;   ;Student Name        ;Text50         }
     { 6   ;   ;Marks Obtained      ;Decimal       ;OnValidate=BEGIN
                                                                 GradeRec.RESET;
@@ -46,7 +46,7 @@ OBJECT Table 33065468 Board Marks
   {
     {    ;Class,Academic Year,Student Number,Subject;
                                                    Clustered=Yes }
-    {    ;Hall Ticket Number                       }
+    {    ;Hall Ticket No.                          }
     {    ;Student Number                           }
   }
   FIELDGROUPS
