@@ -3,7 +3,7 @@ OBJECT Table 33065467 Board Subjects
   OBJECT-PROPERTIES
   {
     Date=09/19/18;
-    Time=[ 5:24:01 PM];
+    Time=[ 5:55:41 PM];
     Modified=Yes;
     Version List=CDX1.0;
   }
@@ -20,7 +20,7 @@ OBJECT Table 33065467 Board Subjects
     { 4   ;   ;Group Subject       ;Boolean        }
     { 5   ;   ;Compulsory Pass     ;Boolean        }
     { 6   ;   ;Pass Mark           ;Decimal        }
-    { 7   ;   ;Marks Obtained      ;Decimal        }
+    { 7   ;   ;Marks Awarded       ;Decimal        }
     { 8   ;   ;Print Preference Order;Integer      }
     { 9   ;   ;Failed              ;Boolean        }
     { 10  ;   ;Subject Description ;Text50         }
@@ -30,7 +30,7 @@ OBJECT Table 33065467 Board Subjects
   KEYS
   {
     {    ;Class,Academic Year,Subject             ;Clustered=Yes }
-    {    ;Marks Obtained                           }
+    {    ;Marks Awarded                            }
     {    ;Print Preference Order                   }
   }
   FIELDGROUPS
